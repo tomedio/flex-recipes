@@ -1,0 +1,15 @@
+{
+    "recipes": {
+        "tomedio/stripe-symfony": [
+            {
+                "version": "0.1.2",
+                "recipe": {
+                    "repo": "github.com/tomedio/symfony-recipes",
+                    "branch": "main",
+                    "version": "0.1.2",
+                    "directory": "tomedio/stripe-symfony/0.1.2"
+                }
+            }
+        ]
+    }
+}
