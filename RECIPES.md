@@ -4,4 +4,4 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 
 | Package | Latest Recipe |
 | --- | --- |
-| [tomedio/stripe-symfony](https://packagist.org/packages/tomedio/stripe-symfony) | [0.1.2](tomedio/stripe-symfony/0.1.2) |
+| [tomedio/stripe-symfony](https://packagist.org/packages/tomedio/stripe-symfony) | [0.1.3](tomedio/stripe-symfony/0.1.3) |
