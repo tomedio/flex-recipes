@@ -42,7 +42,10 @@ jobs:
         run: |
           mkdir .github/flex-endpoint
           git ls-tree HEAD */*/* | php .github/recipes-checker-main/run generate:flex-endpoint ${{ github.repository }} ${{ inputs.branch }} flex/main .github/flex-endpoint ${{ inputs.versions_json }} ${{ inputs.contrib && '--contrib' || '' }}
-          git checkout -b flex/main || git checkout flex/main
+          # Create the branch if it doesn't exist
+          git branch flex/main 2>/dev/null || echo "Branch already exists"
+          # Force checkout the branch
+          git checkout flex/main
           git rm -q *.json
           mv .github/flex-endpoint/*.json .
           git add *.json
