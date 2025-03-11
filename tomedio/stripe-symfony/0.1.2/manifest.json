@@ -1,20 +1,15 @@
 {
-    "version": "0.1.2",
-    "bundles": {
-        "Tomedio\\StripeBundle\\StripeBundle": ["all"]
-    },
-    "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/"
-    },
-    "env": {
-        "STRIPE_API_KEY": "sk_test_your_stripe_api_key",
-        "STRIPE_WEBHOOK_SECRET": "whsec_your_stripe_webhook_secret",
-        "STRIPE_SUCCESS_URL": "https://your-domain.com/payment/success",
-        "STRIPE_CANCEL_URL": "https://your-domain.com/payment/cancel"
-    },
-    "gitignore": [
-        ".env.local",
-        ".env.*.local"
-    ],
-    "ref": "7405f3af1312d1f9121afed4dddef636c6c7ff00"
+  "bundles": {
+    "Tomedio\\StripeBundle\\StripeBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "env": {
+    "STRIPE_API_KEY": "sk_test_your_stripe_api_key",
+    "STRIPE_WEBHOOK_SECRET": "whsec_your_stripe_webhook_secret",
+    "STRIPE_SUCCESS_URL": "https://your-domain.com/payment/success",
+    "STRIPE_CANCEL_URL": "https://your-domain.com/payment/cancel"
+  },
+  "gitignore": [".env.local", ".env.*.local"]
 }
