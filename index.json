@@ -1,15 +1,13 @@
 {
     "recipes": {
         "tomedio/stripe-symfony": [
-            {
-                "version": "0.1.2",
-                "recipe": {
-                    "repo": "github.com/tomedio/flex-recipes",
-                    "branch": "main",
-                    "version": "0.1.2",
-                    "directory": "tomedio/stripe-symfony/0.1.2"
-                }
-            }
+            "0.1.2"
         ]
+    },
+    "branch": "main",
+    "is_contrib": true,
+    "_links": {
+        "repository": "github.com/tomedio/flex-recipes",
+        "origin_template": "{package}:{version}@github.com/tomedio/flex-recipes"
     }
 }
