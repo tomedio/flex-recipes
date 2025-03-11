@@ -1,6 +1,6 @@
 {
   "recipes": {
-    "tomedio/stripe-symfony": ["0.1.3"]
+    "tomedio/stripe-symfony": ["0.2"]
   },
   "branch": "flex/main",
   "is_contrib": true,
