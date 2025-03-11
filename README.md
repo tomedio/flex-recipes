@@ -17,7 +17,7 @@ To use these recipes in your Symfony project, add this repository to your `compo
     "extra": {
         "symfony": {
             "endpoint": [
-                "https://raw.githubusercontent.com/tomedio/symfony-recipes/main/index.json",
+                "https://raw.githubusercontent.com/tomedio/flex-recipes/main/index.json",
                 "flex://defaults"
             ]
         }
