@@ -9,6 +9,10 @@ defaults:
   run:
     shell: bash
 
+# Add permissions to allow pushing to branches
+permissions:
+  contents: write
+
 jobs:
   call-flex-update:
     uses: tbajorek/flex-recipes/.github/workflows/callable-flex-update.yml@main
