@@ -1,0 +1,67 @@
+{
+    "manifests": {
+        "tomedio/stripe-symfony": {
+            "manifest": {
+                "bundles": {
+                    "Tomedio\\StripeBundle\\StripeBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "env": {
+                    "STRIPE_API_KEY": "sk_test_your_stripe_api_key",
+                    "STRIPE_WEBHOOK_SECRET": "whsec_your_stripe_webhook_secret",
+                    "STRIPE_SUCCESS_URL": "https://your-domain.com/payment/success",
+                    "STRIPE_CANCEL_URL": "https://your-domain.com/payment/cancel"
+                },
+                "gitignore": [
+                    ".env.local",
+                    ".env.*.local"
+                ]
+            },
+            "files": {
+                "config/packages/stripe_bundle.yaml": {
+                    "contents": [
+                        "# This file is auto-generated during the composer install",
+                        "stripe_bundle:",
+                        "    api_key: '%env(STRIPE_API_KEY)%'",
+                        "    webhook_secret: '%env(STRIPE_WEBHOOK_SECRET)%'",
+                        "    success_url: '%env(STRIPE_SUCCESS_URL)%'",
+                        "    cancel_url: '%env(STRIPE_CANCEL_URL)%'",
+                        "    subscription_plans: []",
+                        "    # Example subscription plan configuration:",
+                        "    # subscription_plans:",
+                        "    #     - id: basic",
+                        "    #       name: 'Basic Plan'",
+                        "    #       description: 'Basic features'",
+                        "    #       amount: 999",
+                        "    #       currency: 'usd'",
+                        "    #       interval: 'month'",
+                        "    #     - id: premium",
+                        "    #       name: 'Premium Plan'",
+                        "    #       description: 'Premium features'",
+                        "    #       amount: 1999",
+                        "    #       currency: 'usd'",
+                        "    #       interval: 'month'",
+                        "    #       trial_period_days: 14",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/stripe_bundle.yaml": {
+                    "contents": [
+                        "# This file is auto-generated during the composer install",
+                        "stripe_bundle:",
+                        "    resource: '@StripeBundle/Controller/'",
+                        "    type: attribute",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "afd9bf0026797b2c54b90d74b70f254a0b684437"
+        }
+    }
+}
